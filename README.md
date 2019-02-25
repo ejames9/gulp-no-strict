@@ -1,13 +1,13 @@
-#### gulp-no-strict
+# gulp-no-strict
 A simple bit of code for removing all instances of 'use strict' from a file in
 a gulp stream.
 
-## Installation
-```C
+### Installation
+```
 $ npm i -D gulp-no-strict
 ```
-## Usage
-```JavaScript
+### Usage
+```javascript
 const lucyGoosy = require('gulp-no-strict')
 
 gulp.task('default', ()=> {
@@ -19,5 +19,5 @@ gulp.task('default', ()=> {
   })
 ```
 
-##### Voilá!!!!
-##It's the wild, wild west!
+## Voilá!!!!
+####It's the wild, wild west!

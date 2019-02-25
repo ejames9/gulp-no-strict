@@ -1,6 +1,6 @@
 {
   "name": "gulp-no-strict",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Eric James Foster",
   "description": "A simple bit of code to manually remove all instances of 'use strict' in a file.",
   "main": "index.js",
