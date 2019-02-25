@@ -56,18 +56,18 @@ function gulpNoStrict() {
       }
       //If file is buffer, transform it, and push it back to the stream.
       if (file.isBuffer()) {
-        log('file is Buffer', ['cyanBright', 'bold']);
+        // log('file is Buffer', ['cyanBright', 'bold']);
 
 
         //Transform file.contents, convert back to a buffer, and push it back to stream.
         this.file = file.contents;
         this.file = lucyGoosy(this.file);
         file.contents = new Buffer(this.file);
-        log(file.contents, 'cyanBright');
+        // log(file.contents, 'cyanBright');
       //If file is stream, pipe it through internal transform function.
       } else if (file.isStream()) {
-        log('file is Stream', ['cyanBright', 'bold']);
-        log(file.contents, 'cyanBright');
+        // log('file is Stream', ['cyanBright', 'bold']);
+        // log(file.contents, 'cyanBright');
 
         //Define the transformation stream.
         this._transformStream = this._stream();
@@ -98,7 +98,7 @@ util.inherits(gulpNoStrict, Transform);
 module.exports = gulpNoStrict;
 
 
-
-vfs.src('./lib/test/IO/testFile.js', {buffer: false})
-.pipe(gulpNoStrict())
-.pipe(vfs.dest('./lib/test/IO/testFileOut.js'));
+//
+// vfs.src('./lib/test/IO/testFile.js', {buffer: false})
+// .pipe(gulpNoStrict())
+// .pipe(vfs.dest('./lib/test/IO/testFileOut.js'));

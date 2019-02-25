@@ -1,36 +1,31 @@
 {
-  "name": "gulp-elementsjs-interpreter",
-  "version": "1.8.9",
+  "name": "gulp-no-strict",
+  "version": "0.0.6",
   "author": "Eric James Foster",
-  "description": "parses files for elementsJS syntax, and replaces it with 'legal' elementsJS alias functions",
+  "description": "A simple bit of code to manually remove all instances of 'use strict' in a file.",
   "main": "index.js",
-  "dependencies": {
-    "asyncawait": "^1.0.3",
-    "elementsJS": "^0.9.18",
-    "event-stream": "^3.3.2",
-    "gulp-util": "^3.0.7",
-    "lodash": "^4.13.1",
-    "webpack-sources": "^0.1.1"
-  },
-  "devDependencies": {
-    "assert": "^1.3.0",
-    "gulp": "^3.9.1",
-    "gulp-mocha": "^2.2.0",
-    "mocha": "2.4.5",
-    "vinyl": "^1.1.1",
-    "vinyl-fs": "^2.3.1"
-  },
-  "scripts": {
-    "test": "gulp"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ejames9/gulp-elementsJS-interpreter.git"
+    "url": "git+https://github.com/ejames9/gulp-no-strict.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ejames9/gulp-elementsJS-interpreter/issues"
+    "url": "https://github.com/ejames9/gulp-no-strict/issues"
   },
-  "homepage": "https://github.com/ejames9/gulp-elementsJS-interpreter#readme"
+  "homepage": "https://github.com/ejames9/gulp-no-strict#readme",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "acorn": "^6.1.0",
+    "elementsJS": "^0.9.30",
+    "event-stream": "^4.0.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-no-strict": "0.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "gulp-webpack": "^1.5.0",
+    "vinyl-fs": "^3.0.3",
+    "webpack": "^4.29.3"
+  }
 }
